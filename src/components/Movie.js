@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { observer, inject } from 'mobx-react'
 // import MovieInfo from './MovieInfo';
 
 export default class Movie extends Component {

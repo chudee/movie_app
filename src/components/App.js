@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { Provider } from 'mobx-react'
 import stores from '../stores'
 
-import { Menu, Movie, MovieInfo } from './'
+import { Menu, MovieList, Movie } from './'
 
 export default class App extends Component {
     render() {
         return (
             <Provider {...stores} >
                 <Router>
-                    <Menu />
-                    <Route />
+                    {/* <Menu /> */}
+                    <MovieList />
                 </Router>
             </Provider>
         )
